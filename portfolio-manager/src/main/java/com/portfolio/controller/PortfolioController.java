@@ -52,7 +52,7 @@ public class PortfolioController {
         portfolioService.delete(id);
         return ResponseEntity.noContent().build();
     }
-    
+    //add some annotation here,to be frequent contributers
     @GetMapping("/value")
     public ResponseEntity<Map<String, BigDecimal>> getTotalValue() {
         BigDecimal totalValue = portfolioService.calculateTotalValue();
